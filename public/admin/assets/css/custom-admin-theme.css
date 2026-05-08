@@ -1,0 +1,144 @@
+/*
+* Custom Admin Theme Overrides
+* File to customize admin theme font color and weight
+******************************************************************************/
+
+/* Override CSS variables for darker font color and increased font weight */
+:root,
+[data-bs-theme="light"] {
+  /* Change body text color from grey (#6d6b77) to dark (#2f2b3d) */
+  --bs-body-color: #2f2b3d;
+  --bs-body-color-rgb: 47, 43, 61;
+  
+  /* Increase font weight from 400 to 500 for better visibility */
+  --bs-body-font-weight: 500;
+  
+  /* Make secondary text color darker too */
+  --bs-secondary-color: #444050;
+  --bs-secondary-color-rgb: 68, 64, 80;
+  
+  /* Ensure tertiary color is also darker */
+  --bs-tertiary-color: rgba(47, 43, 61, 0.7);
+  --bs-tertiary-color-rgb: 47, 43, 61;
+}
+
+/* Dark theme overrides */
+[data-bs-theme="dark"] {
+  /* Keep dark theme text light but make it more visible */
+  --bs-body-color: #e1def5;
+  --bs-body-color-rgb: 225, 222, 245;
+  
+  /* Increase font weight for dark theme too */
+  --bs-body-font-weight: 500;
+  
+  /* Make secondary text more visible in dark theme */
+  --bs-secondary-color: #acabc1;
+  --bs-secondary-color-rgb: 172, 171, 193;
+}
+
+/* Direct body styling override for immediate effect */
+body {
+  color: #2f2b3d !important;
+  font-weight: 500 !important;
+}
+
+/* Dark theme body override */
+[data-bs-theme="dark"] body {
+  color: #e1def5 !important;
+  font-weight: 500 !important;
+}
+
+/* Override common text elements for better visibility */
+p, span, div, td, th, li, label, .form-control, .form-select {
+  font-weight: 500;
+}
+
+/* Ensure table text is darker and more visible */
+.table td, .table th {
+  color: #2f2b3d;
+  font-weight: 500;
+}
+
+/* Dark theme table text */
+[data-bs-theme="dark"] .table td, 
+[data-bs-theme="dark"] .table th {
+  color: #e1def5;
+  font-weight: 500;
+}
+
+/* Menu and navigation text */
+.menu-item .menu-link,
+.navbar-nav .nav-link,
+.dropdown-item {
+  font-weight: 500;
+  color: #2f2b3d;
+}
+
+/* Dark theme menu and navigation */
+[data-bs-theme="dark"] .menu-item .menu-link,
+[data-bs-theme="dark"] .navbar-nav .nav-link,
+[data-bs-theme="dark"] .dropdown-item {
+  color: #e1def5;
+  font-weight: 500;
+}
+
+/* Card and content text */
+.card-body, .card-text, .card-title {
+  color: #2f2b3d;
+  font-weight: 500;
+}
+
+/* Dark theme card text */
+[data-bs-theme="dark"] .card-body,
+[data-bs-theme="dark"] .card-text,
+[data-bs-theme="dark"] .card-title {
+  color: #e1def5;
+  font-weight: 500;
+}
+
+/* Form elements */
+.form-control, .form-select, .form-check-label {
+  color: #2f2b3d;
+  font-weight: 500;
+}
+
+/* Dark theme form elements */
+[data-bs-theme="dark"] .form-control,
+[data-bs-theme="dark"] .form-select,
+[data-bs-theme="dark"] .form-check-label {
+  color: #e1def5;
+  font-weight: 500;
+}
+
+/* Button text weight */
+.btn {
+  font-weight: 600;
+}
+
+/* Sidebar and menu text improvements */
+.layout-menu .menu-item .menu-link {
+  font-weight: 500;
+  color: #2f2b3d;
+}
+
+[data-bs-theme="dark"] .layout-menu .menu-item .menu-link {
+  color: #e1def5;
+  font-weight: 500;
+}
+
+/* DataTables text improvements */
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter {
+  color: #2f2b3d;
+  font-weight: 500;
+}
+
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_info,
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_paginate,
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_length,
+[data-bs-theme="dark"] .dataTables_wrapper .dataTables_filter {
+  color: #e1def5;
+  font-weight: 500;
+}

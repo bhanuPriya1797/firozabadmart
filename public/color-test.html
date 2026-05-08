@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Theme Color Test</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #f5f5f5;
+            }
+            .color-test {
+                background: var(--theme-color);
+                color: white;
+                padding: 20px;
+                border-radius: 8px;
+                margin: 10px 0;
+                text-align: center;
+            }
+            .color-info {
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                margin: 10px 0;
+                border-left: 4px solid var(--theme-color);
+            }
+            .color-swatch {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                background: var(--theme-color);
+                border-radius: 8px;
+                margin: 10px;
+                border: 2px solid #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Theme Color Test - Light Green</h1>
+
+        <div class="color-test">
+            <h2>This should be light green background</h2>
+            <p>Theme color: var(--theme-color) = #66BB6A</p>
+        </div>
+
+        <div class="color-info">
+            <h3>Color Information:</h3>
+            <p><strong>Old Color:</strong> #D21A26 (Red)</p>
+            <p><strong>New Color:</strong> #66BB6A (Light Green)</p>
+            <p><strong>Color Name:</strong> Material Design Green 400</p>
+        </div>
+
+        <div>
+            <h3>Color Swatches:</h3>
+            <div class="color-swatch" title="New Theme Color"></div>
+            <span>New Theme Color (#66BB6A)</span>
+        </div>
+
+        <div class="color-info">
+            <h3>Files Updated:</h3>
+            <ul>
+                <li>public/assets/css/style.css</li>
+                <li>public/assets/css/student-auth.css</li>
+                <li>public/electrow/assets/css/style.css</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
